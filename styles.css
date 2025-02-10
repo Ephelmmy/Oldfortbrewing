@@ -20,36 +20,23 @@ body {
     position: relative;
 }
 
-/* Dark overlay for better readability */
-.welcome-section::before {
-    content: "";
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background: rgba(0, 0, 0, 0.5);
-    z-index: 1;
+/* Dark Overlay for Text */
+.welcome-text-container {
+    background: rgba(0, 0, 0, 0.6); /* Dark semi-transparent box */
+    padding: 15px;
+    border-radius: 10px;
+    max-width: 600px;
 }
 
-/* Removed the black box */
 .welcome-section .logo {
     width: 140px;
     margin-bottom: 10px;
-    position: relative;
-    z-index: 2;
 }
 
 .welcome-text {
     font-size: 1.5rem;
-    max-width: 600px;
     line-height: 1.4;
-    position: relative;
-    z-index: 2;
-    background: rgba(0, 0, 0, 0.6);
-    padding: 10px;
-    border-radius: 5px;
-    color: white;
+    color: white; /* Ensure text is bright */
 }
 
 /* Beer Menu Section */
