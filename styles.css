@@ -1,0 +1,64 @@
+/* General Styles */
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    text-align: center;
+    color: white;
+}
+
+/* Welcome Section */
+.welcome-section {
+    background: url('background1.jpg') center/cover no-repeat;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    position: relative;
+}
+
+.welcome-section .overlay {
+    background: rgba(0, 0, 0, 0.6);
+    padding: 20px;
+    border-radius: 10px;
+}
+
+.logo {
+    width: 150px;
+    margin-bottom: 10px;
+}
+
+/* Beer Menu Section */
+.menu-section {
+    background: url('background2.jpg') center/cover no-repeat;
+    padding: 50px 20px;
+}
+
+.menu-section h2 {
+    margin-bottom: 20px;
+    font-size: 2rem;
+}
+
+.menu-container {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+    max-width: 800px;
+    margin: auto;
+}
+
+.beer-item {
+    background: rgba(0, 0, 0, 0.7);
+    padding: 15px;
+    border-radius: 8px;
+}
+
+/* Footer */
+.footer {
+    background: black;
+    padding: 20px;
+}
+
+.footer img {
+    width: 40px;
+  }
