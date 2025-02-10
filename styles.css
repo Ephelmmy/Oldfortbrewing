@@ -3,67 +3,70 @@ body {
     margin: 0;
     font-family: Arial, sans-serif;
     text-align: center;
+    background-color: #111; /* Darker background for contrast */
     color: white;
 }
 
 /* Welcome Section */
 .welcome-section {
     background: url('background1.jpg') center/cover no-repeat;
-    height: 100vh;
+    height: 90vh;
     display: flex;
     align-items: center;
     justify-content: center;
     text-align: center;
-    position: relative;
+    padding: 20px;
 }
 
 .welcome-section .overlay {
-    background: rgba(0, 0, 0, 0.6);
+    background: rgba(0, 0, 0, 0.7);
     padding: 20px;
     border-radius: 10px;
 }
 
 .logo {
-    width: 150px;
+    width: 140px;
     margin-bottom: 10px;
 }
 
 /* Beer Menu Section */
 .menu-section {
-    background: url('background2.jpg') center/cover no-repeat;
-    padding: 50px 20px;
+    background: rgba(20, 20, 20, 0.9); /* Solid background for better readability */
+    padding: 40px 15px;
 }
 
 .menu-section h2 {
-    margin-bottom: 20px;
     font-size: 2rem;
+    margin-bottom: 20px;
+    color: #b28041; /* Highlighted title */
 }
 
+/* Beer Menu Grid */
 .menu-container {
     display: grid;
-    grid-template-columns: repeat(2, 1fr);
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); /* Responsive Grid */
     gap: 20px;
     max-width: 800px;
     margin: auto;
 }
 
+/* Individual Beer Item */
 .beer-item {
-    background: rgba(0, 0, 0, 0.7);
+    background: #222;
     padding: 15px;
     border-radius: 8px;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
+    text-align: left;
 }
 
+/* Beer Title & Price */
 .beer-item h3 {
     display: flex;
     justify-content: space-between;
-    width: 100%;
+    font-size: 1.2rem; /* Larger for visibility */
+    color: #ffcc00; /* Brighter text for contrast */
 }
 
 .price {
-    color: #b28041;
     font-weight: bold;
 }
 
@@ -79,6 +82,26 @@ body {
 }
 
 .social-media img {
-    width: 40px;
+    width: 35px;
     margin-top: 10px;
+}
+
+/* Responsive Adjustments */
+@media (max-width: 768px) {
+    .welcome-section {
+        height: auto;
+        padding: 50px 20px;
+    }
+
+    .menu-container {
+        grid-template-columns: 1fr; /* Single column for mobile */
+    }
+
+    .beer-item {
+        padding: 10px;
+    }
+
+    .beer-item h3 {
+        font-size: 1rem;
+    }
 }
