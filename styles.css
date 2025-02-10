@@ -20,7 +20,6 @@ body {
     position: relative;
 }
 
-/* Darker overlay for better readability */
 .welcome-section::before {
     content: "";
     position: absolute;
@@ -28,7 +27,8 @@ body {
     left: 0;
     width: 100%;
     height: 100%;
-    background: rgba(0, 0, 0, 0.7); /* Darkened further for contrast */
+    background: rgba(0, 0, 0, 0.7); /* Darker overlay for readability */
+    z-index: 0;
 }
 
 /* Removed the black box */
@@ -40,11 +40,11 @@ body {
 }
 
 .welcome-text {
-    font-size: 1.8rem;
+    font-size: 1.7rem;
     max-width: 600px;
     line-height: 1.4;
+    color: white;
     font-weight: bold;
-    color: #fff; /* Fully white text for better contrast */
     position: relative;
     z-index: 1;
 }
@@ -63,13 +63,15 @@ body {
     left: 0;
     width: 100%;
     height: 100%;
-    background: rgba(0, 0, 0, 0.6); /* Dark overlay for readability */
+    background: rgba(0, 0, 0, 0.7); /* Dark overlay for readability */
+    z-index: 0;
 }
 
 .menu-section h2 {
     font-size: 2rem;
     margin-bottom: 20px;
-    color: #b28041;
+    color: #ffcc00;
+    font-weight: bold;
     position: relative;
     z-index: 1;
 }
@@ -97,8 +99,9 @@ body {
 .beer-item h3 {
     display: flex;
     justify-content: space-between;
-    font-size: 1.2rem;
+    font-size: 1.3rem;
     color: #ffcc00;
+    font-weight: bold;
 }
 
 .price {
@@ -137,6 +140,6 @@ body {
     }
 
     .beer-item h3 {
-        font-size: 1rem;
+        font-size: 1.1rem;
     }
 }
