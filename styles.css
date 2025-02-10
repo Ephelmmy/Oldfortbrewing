@@ -20,7 +20,7 @@ body {
     flex-direction: column;
 }
 
-/* Overlay to improve text clarity */
+/* Darker Overlay to Improve Text Clarity */
 .welcome-section::before {
     content: "";
     position: absolute;
@@ -28,7 +28,7 @@ body {
     left: 0;
     width: 100%;
     height: 100%;
-    background: rgba(0, 0, 0, 0.4); /* Adjust contrast */
+    background: rgba(0, 0, 0, 0.7); /* Darker overlay */
 }
 
 /* Removed the black box */
@@ -45,6 +45,8 @@ body {
     line-height: 1.4;
     position: relative;
     z-index: 1;
+    color: white; /* Ensure text is white */
+    font-weight: bold;
 }
 
 /* Beer Menu Section */
