@@ -9,6 +9,7 @@ body {
 
 /* Welcome Section */
 .welcome-section {
+    position: relative;
     background: url('background1.jpg') center/cover no-repeat;
     height: 90vh;
     display: flex;
@@ -19,16 +20,31 @@ body {
     flex-direction: column;
 }
 
+/* Overlay to improve text clarity */
+.welcome-section::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.4); /* Adjust contrast */
+}
+
 /* Removed the black box */
 .welcome-section .logo {
     width: 140px;
     margin-bottom: 10px;
+    position: relative;
+    z-index: 1;
 }
 
 .welcome-text {
     font-size: 1.5rem;
     max-width: 600px;
     line-height: 1.4;
+    position: relative;
+    z-index: 1;
 }
 
 /* Beer Menu Section */
