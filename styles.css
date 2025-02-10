@@ -1,64 +1,99 @@
 /* General Styles */
 body {
-    margin: 0;
     font-family: Arial, sans-serif;
-    text-align: center;
-    color: white;
+    margin: 0;
+    padding: 0;
+    background-color: #f8f5f2;
 }
 
-/* Welcome Section */
-.welcome-section {
-    background: url('background1.jpg') center/cover no-repeat;
-    height: 100vh;
+/* Header */
+header {
+    text-align: center;
+    padding: 20px;
+    background-color: #222;
+}
+
+header img {
+    max-width: 200px;
+}
+
+/* Welcoming Section */
+.welcome {
     display: flex;
     align-items: center;
-    justify-content: center;
-    text-align: center;
-    position: relative;
+    justify-content: space-between;
+    padding: 50px;
+    background-color: #ddd;
 }
 
-.welcome-section .overlay {
-    background: rgba(0, 0, 0, 0.6);
-    padding: 20px;
+.welcome-text {
+    max-width: 50%;
+}
+
+.welcome h1 {
+    color: #b28041;
+}
+
+.welcome p {
+    font-size: 18px;
+}
+
+.welcome-image img {
+    max-width: 400px;
     border-radius: 10px;
 }
 
-.logo {
-    width: 150px;
-    margin-bottom: 10px;
-}
-
-/* Beer Menu Section */
-.menu-section {
-    background: url('background2.jpg') center/cover no-repeat;
-    padding: 50px 20px;
-}
-
-.menu-section h2 {
-    margin-bottom: 20px;
-    font-size: 2rem;
+/* Beer Menu */
+.beer-menu {
+    text-align: center;
+    padding: 50px;
+    background-color: #fff;
 }
 
 .menu-container {
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    gap: 20px;
-    max-width: 800px;
-    margin: auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.menu-image img {
+    max-width: 400px;
+    border-radius: 10px;
+}
+
+.menu-list {
+    max-width: 50%;
 }
 
 .beer-item {
-    background: rgba(0, 0, 0, 0.7);
-    padding: 15px;
-    border-radius: 8px;
+    text-align: left;
+    margin-bottom: 20px;
+}
+
+.beer-item h3 {
+    display: flex;
+    justify-content: space-between;
+    font-size: 22px;
+}
+
+.beer-item span {
+    color: #b28041;
+    font-weight: bold;
 }
 
 /* Footer */
-.footer {
-    background: black;
+footer {
+    background-color: #222;
+    color: white;
     padding: 20px;
+    text-align: center;
 }
 
-.footer img {
-    width: 40px;
-  }
+.footer-info p {
+    margin: 5px 0;
+}
+
+.social-media img {
+    max-width: 30px;
+    margin-top: 10px;
+}
